@@ -1,0 +1,9 @@
+function calculateAge(birthdate) {
+    const now = new Date();
+    const diff = now - birthdate;
+    const ageDate = new Date(diff);
+    return Math.abs(ageDate.getUTCFullYear() - 1970);
+}
+
+// Example usage:
+console.log(calculateAge(new Date(1990, 5, 15))); // Output: (depends on current date) For example, if current date is 2024-03-14, output would be 33
